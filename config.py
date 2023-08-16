@@ -1,1 +1,1 @@
-REMOTE_APP_PATH = r'C:\Users\Administrator\Documents\GMonster (22Feb)2023\database\app.log'
+REMOTE_APP_PATH = r'C:\Users\Administrator\Desktop\GMonster\logs\gmonster.log'
