@@ -19,7 +19,8 @@ def download_file(server_ip, server_port, username, password, remote_file_path, 
     sftp.close()
     transport.close()
 
-folder_name = "Output" + datetime.now().strftime("%Y-%m-%d %H-%M-%S")
+os.makedirs("Output", exist_ok=True)
+folder_name = "Output/" + datetime.now().strftime("%Y-%m-%d %H-%M-%S")
 os.makedirs(folder_name, exist_ok=True)
 
 data = pd.read_excel('Gmonster SSH Access.xlsx')
