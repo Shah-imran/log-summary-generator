@@ -48,6 +48,7 @@ all_mark_target_errors = []
 print(f"\nLog files downloaded and saved in '{folder_name}' directory.")
 
 for index, row in data.iterrows():
+    gmonster_instance = row['Gmonster Instance']
     local_file_path = os.path.join(folder_name, gmonster_instance, 'logfile.log')
 
     with open(local_file_path, "r") as logfile:
